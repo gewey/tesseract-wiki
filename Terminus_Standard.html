@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Terminus Standard — Physical & Survival Substrate</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+</head>
+<body class="wiki-body">
+  <header class="wiki-header">
+    <div class="header-brand">
+      <span class="titan-icon">🏛️</span>
+      <h1>Atlas of Tesseract City</h1>
+    </div>
+    <nav class="wiki-nav">
+      <a href="index.html" class="wiki-link">Home</a>
+      <a href="Tesseract_City_Sanctuary.html" class="wiki-link">Sanctuary Charter</a>
+      <a href="Terminus_Standard.html" class="wiki-link active">Terminus</a>
+      <a href="Sentinus_Architecture.html" class="wiki-link">Sentinus</a>
+      <a href="Morning_Ritual.html" class="wiki-link">Morning Ritual</a>
+      <a href="Substrate_Laws.html" class="wiki-link">Substrate Laws</a>
+    </nav>
+  </header>
+
+  <main class="wiki-content">
+    <article class="wiki-article">
+      <header class="article-header">
+        <h2>The Terminus Standard (Lizard Brain)</h2>
+        <p class="lead">The foundational contract of the Viktor Substrate. Named for Terminus, Roman god of boundary stones.</p>
+      </header>
+
+      <section>
+        <h3>The Six Laws of Terminus</h3>
+        <ol>
+          <li><strong>Orchestration vs Calculation</strong>: CORE orchestrates. NUCLEON calculates. Never swap.</li>
+          <li><strong>Disk Access Boundary</strong>: Only QUARK touches disk. All I/O must route through <code>subspace_link.py</code> / <code>QuarkIOBase</code>.</li>
+          <li><strong>Metabolic Bridging</strong>: No circular imports. ZPM bridges all tiers; daisy-chain handles cross-SSOT imports.</li>
+          <li><strong>Path SSOT</strong>: Zero hardcoded paths. All paths resolve through <code>DHD.get_coordinates()</code> or <code>terminus()</code>.</li>
+          <li><strong>Telemetry Trace</strong>: Every operation leaves an indelible signature via <code>record_telemetry()</code>.</li>
+          <li><strong>LLM Orchestration SSOT</strong>: COMTRYA is the only compliant local LLM access surface. Direct Ollama sockets are prohibited.</li>
+        </ol>
+      
+<section class="wiki-backlinks" id="wiki-backlinks">
+  <h3>🔗 Referenced By (5)</h3>
+  <ul class="wiki-backlink-list">
+    <li><a href="index.html" class="wiki-link">Tesseract City — Portal of Celestial Knowledge</a></li>
+    <li><a href="Tesseract_City_Sanctuary.html" class="wiki-link">Tesseract City — Sanctuary & Founding Philosophy</a></li>
+    <li><a href="Sentinus_Architecture.html" class="wiki-link">Sentinus Architecture — The Monkey Brain & Higher Sentience</a></li>
+    <li><a href="Morning_Ritual.html" class="wiki-link">Morning Ritual — Executive Boot Orchestrator</a></li>
+    <li><a href="Substrate_Laws.html" class="wiki-link">Codex of Substrate Laws — Tesseract Court House</a></li>
+  </ul>
+</section>
+</section>
+
+      <section>
+        <h3>The 13 Single Sources of Truth (SSOTs)</h3>
+        <p>The substrate relies on 13 specialized SSOT modules discovered through the mycelial network of <code>_TERMINUS.py</code>:</p>
+        <table class="wiki-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Folder</th>
+              <th>SSOT</th>
+              <th>Standard &amp; Law</th>
+              <th>Key Export</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>00_Command</td><td>Stargate Command</td><td>"All executive ops route through SGC"</td><td><code>StargateCommand</code></td></tr>
+            <tr><td>1</td><td>01_Path</td><td>DHD (Dial Home Device)</td><td>"All paths resolve through DHD"</td><td><code>DHD</code></td></tr>
+            <tr><td>2</td><td>02_Import</td><td>ZPM (Zero Point Module)</td><td>"All imports flow through ZPM"</td><td><code>terminus()</code>, <code>record_telemetry()</code></td></tr>
+            <tr><td>3</td><td>03_Model</td><td>COMTRYA</td><td>"All LLM access routes through COMTRYA"</td><td><code>call_ollama()</code></td></tr>
+            <tr><td>4</td><td>04_Boilerplate</td><td>Dakara Superweapon</td><td>"All boilerplate syncs through Dakara"</td><td><code>sync_template()</code></td></tr>
+            <tr><td>5</td><td>05_Registry</td><td>Ping</td><td>"All scripts register with Ping"</td><td><code>get_module()</code></td></tr>
+            <tr><td>6</td><td>06_Documentation</td><td>Mission Report</td><td>"All docs flow through Mission Report"</td><td><code>MissionReport</code></td></tr>
+            <tr><td>7</td><td>07_Memory</td><td>The Link</td><td>"All memory persists through The Link"</td><td><code>record_script_memory()</code></td></tr>
+            <tr><td>8</td><td>08_Versions</td><td>Quantum Mirror</td><td>"Every file history is a parallel reality"</td><td><code>get_version()</code>, <code>promote_version()</code></td></tr>
+            <tr><td>9</td><td>09.75_Platform</td><td>Platform 9¾</td><td>"Hidden access points to substrate"</td><td><code>dial()</code></td></tr>
+            <tr><td>10</td><td>10_Cooldown</td><td>GCD</td><td>"Global cooldown &amp; execution throttle"</td><td><code>check_cooldown()</code></td></tr>
+            <tr><td>11</td><td>11_Blacklist</td><td>Ostracization</td><td>"Bloat and system churn must be ostracized"</td><td><code>is_ostracized()</code></td></tr>
+            <tr><td>12</td><td>12_Toolchain</td><td>The Forge</td><td>"Tools known and kept off substrate drive"</td><td><code>resolve_tool()</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>The Mycelial Daisy-Chain Architecture</h3>
+        <p>
+          <code>_TERMINUS.py</code> is the lizard brain hub. When imported, it dynamically inspects numbered subdirectories, identifies <code>__ssot_*.py</code> modules, and binds them into <code>sys.modules</code> without circular import deadlocks.
+        </p>
+        <pre class="mermaid">
+flowchart TD
+    Hub["_TERMINUS.py (The Hub Door)"] --> DHD["01_Path: __ssot_dial_home_device.py"]
+    Hub --> ZPM["02_Import: __ssot_zero_point_module.py"]
+    Hub --> COM["03_Model: __ssot_comtrya.py"]
+    Hub --> SGC["00_Command: __ssot_stargate_command.py"]
+    Hub --> DAK["04_Boilerplate: __ssot_dakara_superweapon.py"]
+    DHD -.-> |Daisy Chain Link| ZPM
+    ZPM -.-> |Daisy Chain Link| COM
+    COM -.-> |Daisy Chain Link| SGC
+        </pre>
+      </section>
+
+      <section>
+        <h3>Compliance Checklist</h3>
+        <p>
+          A script operating in Tesseract City is Terminus-compliant if and only if:
+        </p>
+        <ul>
+          <li>It imports directly from <code>_TERMINUS</code> or <code>__ssot_*</code>.</li>
+          <li>All paths are resolved via <code>DHD.get_coordinates()</code> (no hardcoded drive letters).</li>
+          <li>All file persistence uses Quark I/O abstraction.</li>
+          <li>Every execution traces into the canonical telemetry database via <code>record_telemetry()</code>.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="wiki-footer">
+    <p>Atlas of Tesseract City &bull; Sustained by Titan Atlas &bull; The Substrate Endures</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Astrovena — Prophecy & Shrine Engine Specification</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+</head>
+<body class="wiki-body">
+  <header class="wiki-header">
+    <div class="header-brand"><span class="titan-icon">🏛️</span><h1>Atlas of Tesseract City</h1></div>
+    <nav class="wiki-nav"><a href="index.html" class="wiki-link">Home</a><a href="Astrovena_Sub_Wiki.html" class="wiki-link">Astrovena</a></nav>
+  </header>
+  <main class="wiki-content">
+    <article class="wiki-article">
+      <h2>Prophecy & Shrine Engine Specification</h2>
+      <p class="lead">Technical specifications for the ProphecyOracle, ShrineBlessing system, and narrative irony engine.</p>
+      <section>
+        <h3>Core Engine Architectures</h3>
+        <p>The Prophecy Divination Engine maintains the H-Axis narrative flow. By linking blessings to shrine nodes, entities can manifest destiny or suffer ironic consequences.</p>
+        <pre><code class="language-python" data-filename="prophecy_divination_engine.py"># {WORKSPACE_ROOT}/.astrovena/engines/prophecy_divination_engine.py</code></pre>
+        <pre><code class="language-python" data-filename="shrine_blessings_engine.py"># {WORKSPACE_ROOT}/.astrovena/engines/shrine_blessings_engine.py</code></pre>
+      
+<section class="wiki-backlinks" id="wiki-backlinks">
+  <h3>🔗 Referenced By (1)</h3>
+  <ul class="wiki-backlink-list">
+    <li><a href="Astrovena_Sub_Wiki.html" class="wiki-link">Astrovena — The 6D World-Sheet Sub-Portal</a></li>
+  </ul>
+</section>
+</section>
+      <section>
+        <h3>Resonance System</h3>
+        <pre class="mermaid">
+graph TD
+A[Shrine Node] -->|Resonance| B[ProphecyManifestation]
+B -->|BlessingLink| C[DivineConsequence]
+        </pre>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

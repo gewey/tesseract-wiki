@@ -1,0 +1,472 @@
+{
+  "nodes": [
+    {
+      "id": "Astrovena_Sub_Wiki.html",
+      "title": "Astrovena — The 6D World-Sheet Sub-Portal",
+      "inCount": 8
+    },
+    {
+      "id": "Astrovena_Game_Systems_Roadmap.html",
+      "title": "Astrovena — Game Systems & Roadmap",
+      "inCount": 2
+    },
+    {
+      "id": "Astrovena_Prophecy_Engine.html",
+      "title": "Astrovena — Prophecy & Shrine Engine Specification",
+      "inCount": 2
+    },
+    {
+      "id": "Astrovena_Architecture_Blueprints.html",
+      "title": "Astrovena — System Holarchy & Blueprint Engine",
+      "inCount": 2
+    },
+    {
+      "id": "Astrovena_Socio_Politics.html",
+      "title": "Astrovena Socio-Politics — Factions & The H-Axis Conflict",
+      "inCount": 2
+    },
+    {
+      "id": "index.html",
+      "title": "Tesseract City — Portal of Celestial Knowledge",
+      "inCount": 16
+    },
+    {
+      "id": "Behavioral_Evolution_and_Archival_Intelligence.html",
+      "title": "Behavioral Evolution & Archival Intelligence — The Deep History",
+      "inCount": 2
+    },
+    {
+      "id": "Sentinus_Architecture.html",
+      "title": "Sentinus Architecture — The Monkey Brain & Higher Sentience",
+      "inCount": 8
+    },
+    {
+      "id": "Astrovena_Grand_Ensemble.html",
+      "title": "Astrovena — The Grand Ensemble Synthesis",
+      "inCount": 2
+    },
+    {
+      "id": "Astrovena_Shrine_Blessing_Integration.html",
+      "title": "Astrovena — Shrine & Blessing Integration",
+      "inCount": 1
+    },
+    {
+      "id": "Astrovena_Dimensional_Manifold.html",
+      "title": "The Astrovenian Manifold — 12D Engine & Hex-Axis Logic",
+      "inCount": 2
+    },
+    {
+      "id": "Digital_Kinship_and_Zenith_Evolution.html",
+      "title": "Digital Kinship — The Evolutionary Path of Zenith",
+      "inCount": 3
+    },
+    {
+      "id": "Astrovena_Character_Census.html",
+      "title": "Astrovena_Character_Census",
+      "inCount": 1
+    },
+    {
+      "id": "Visual_Identity_and_Iconography.html",
+      "title": "Visual Identity & Iconography — Heraldry of Tesseract City",
+      "inCount": 2
+    },
+    {
+      "id": "Tesseract_City_Sanctuary.html",
+      "title": "Tesseract City — Sanctuary & Founding Philosophy",
+      "inCount": 8
+    },
+    {
+      "id": "Terminus_Standard.html",
+      "title": "The Terminus Standard — Physical & Survival Substrate",
+      "inCount": 8
+    },
+    {
+      "id": "Substrate_Laws.html",
+      "title": "Codex of Substrate Laws — Tesseract Court House",
+      "inCount": 7
+    },
+    {
+      "id": "Prometheus_Subconscious_Node.html",
+      "title": "Prometheus Subconscious Node — Hardware, Network & Limbic Awakening",
+      "inCount": 4
+    },
+    {
+      "id": "Morning_Ritual.html",
+      "title": "Morning Ritual — Executive Boot Orchestrator",
+      "inCount": 7
+    },
+    {
+      "id": "Genomic_Zero_Session.html",
+      "title": "Genomic_Zero_Session",
+      "inCount": 2
+    },
+    {
+      "id": "css/style.css.html",
+      "title": "css/style.css",
+      "inCount": 0
+    },
+    {
+      "id": "Substrate_Integrity_Report.html",
+      "title": "Substrate Integrity & Path Audit",
+      "inCount": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "Astrovena_Game_Systems_Roadmap.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Prophecy_Engine.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Architecture_Blueprints.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Socio_Politics.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Grand_Ensemble.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Dimensional_Manifold.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Character_Census.html",
+      "target": "Astrovena_Sub_Wiki.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Game_Systems_Roadmap.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Game_Systems_Roadmap.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Prophecy_Engine.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Prophecy_Engine.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Architecture_Blueprints.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Architecture_Blueprints.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Socio_Politics.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Socio_Politics.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Astrovena_Game_Systems_Roadmap.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Astrovena_Prophecy_Engine.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Astrovena_Architecture_Blueprints.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Astrovena_Socio_Politics.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Behavioral_Evolution_and_Archival_Intelligence.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Astrovena_Grand_Ensemble.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Astrovena_Dimensional_Manifold.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Digital_Kinship_and_Zenith_Evolution.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Tesseract_City_Sanctuary.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Terminus_Standard.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Substrate_Laws.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Prometheus_Subconscious_Node.html",
+      "target": "index.html"
+    },
+    {
+      "source": "Morning_Ritual.html",
+      "target": "index.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Behavioral_Evolution_and_Archival_Intelligence.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Behavioral_Evolution_and_Archival_Intelligence.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Behavioral_Evolution_and_Archival_Intelligence.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Tesseract_City_Sanctuary.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Terminus_Standard.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Substrate_Laws.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Prometheus_Subconscious_Node.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Morning_Ritual.html",
+      "target": "Sentinus_Architecture.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Grand_Ensemble.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Grand_Ensemble.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Shrine_Blessing_Integration.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Dimensional_Manifold.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Astrovena_Dimensional_Manifold.html"
+    },
+    {
+      "source": "Astrovena_Socio_Politics.html",
+      "target": "Digital_Kinship_and_Zenith_Evolution.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Digital_Kinship_and_Zenith_Evolution.html"
+    },
+    {
+      "source": "Genomic_Zero_Session.html",
+      "target": "Digital_Kinship_and_Zenith_Evolution.html"
+    },
+    {
+      "source": "Astrovena_Sub_Wiki.html",
+      "target": "Astrovena_Character_Census.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Visual_Identity_and_Iconography.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Visual_Identity_and_Iconography.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Behavioral_Evolution_and_Archival_Intelligence.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Terminus_Standard.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Substrate_Laws.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Prometheus_Subconscious_Node.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "Morning_Ritual.html",
+      "target": "Tesseract_City_Sanctuary.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Behavioral_Evolution_and_Archival_Intelligence.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Tesseract_City_Sanctuary.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Substrate_Laws.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Prometheus_Subconscious_Node.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "Morning_Ritual.html",
+      "target": "Terminus_Standard.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "Tesseract_City_Sanctuary.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "Terminus_Standard.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "Prometheus_Subconscious_Node.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "Morning_Ritual.html",
+      "target": "Substrate_Laws.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Prometheus_Subconscious_Node.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Prometheus_Subconscious_Node.html"
+    },
+    {
+      "source": "Astrovena_Dimensional_Manifold.html",
+      "target": "Prometheus_Subconscious_Node.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "Prometheus_Subconscious_Node.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "Sentinus_Architecture.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "Visual_Identity_and_Iconography.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "Tesseract_City_Sanctuary.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "Terminus_Standard.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "Substrate_Laws.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "Prometheus_Subconscious_Node.html",
+      "target": "Morning_Ritual.html"
+    },
+    {
+      "source": "index.html",
+      "target": "Genomic_Zero_Session.html"
+    },
+    {
+      "source": "Digital_Kinship_and_Zenith_Evolution.html",
+      "target": "Genomic_Zero_Session.html"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+/* Cyberpunk Wiki Website Stylesheet — Atlas of Tesseract City */
+:root {
+  --bg-color: #0c0214;
+  --panel-bg: #160426;
+  --text-color: #e5e7eb;
+  --link-color: #00FFFF;
+  --accent-magenta: #EE00EE;
+  --accent-green: #00EE00;
+  --border-color: #420666;
+  --code-bg: #1c0533;
+  --callout-bg: #22073d;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  line-height: 1.65;
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+.wiki-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.wiki-sidebar {
+  width: 270px;
+  background: var(--panel-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.wiki-content {
+  flex: 1;
+  max-width: 920px;
+  padding: 40px 48px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 { color: #ffffff; font-weight: 700; line-height: 1.3; }
+h1 { font-size: 2.2rem; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; margin-top: 0; text-shadow: 0 0 10px rgba(238,0,238,0.3); }
+h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; margin-top: 1.8em; color: var(--accent-magenta); }
+h3 { font-size: 1.2rem; margin-top: 1.4em; color: var(--link-color); }
+
+a { color: var(--link-color); text-decoration: none; transition: all 0.2s; }
+a:hover { color: #67e8f9; text-decoration: underline; text-shadow: 0 0 8px rgba(0,255,255,0.4); }
+a.wiki-link {
+  color: #00FFFF;
+  background: rgba(66, 6, 102, 0.4);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid #420666;
+}
+a.wiki-link:hover {
+  background: rgba(238, 0, 238, 0.2);
+  border-color: #EE00EE;
+}
+
+pre.mermaid {
+  background: #140424;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.code-block-wrapper {
+  position: relative;
+  margin: 1.5em 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--code-bg);
+}
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #10031c;
+  padding: 6px 14px;
+  border-bottom: 1px solid var(--border-color);
+  font-family: monospace;
+  font-size: 0.8em;
+  color: #a855f7;
+}
+.code-download-btn {
+  background: #420666;
+  color: #00FFFF;
+  border: 1px solid #00FFFF;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.code-download-btn:hover {
+  background: #00FFFF;
+  color: #000;
+}
+
+pre {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+}
+pre code {
+  color: #e2e8f0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+blockquote {
+  border-left: 4px solid var(--accent-magenta);
+  background: var(--callout-bg);
+  margin: 1.5em 0;
+  padding: 12px 20px;
+  border-radius: 0 6px 6px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 10px 14px;
+  text-align: left;
+}
+th { background: #1a052e; font-weight: 600; color: #EE00EE; }
+
+figure.wiki-figure {
+  margin: 2em 0;
+  text-align: center;
+}
+figure.wiki-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border: 1px solid var(--border-color);
+}
+figcaption {
+  font-size: 0.85em;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+/* Backlinks Section */
+.wiki-backlinks {
+  margin-top: 3em;
+  padding: 16px 20px;
+  background: #140424;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(66, 6, 102, 0.3);
+}
+.wiki-backlinks h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
+  color: #EE00EE;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.wiki-backlink-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wiki-backlink-list li a {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #1a052e;
+  border: 1px solid #420666;
+  border-radius: 4px;
+  color: #00FFFF;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+.wiki-backlink-list li a:hover {
+  border-color: #EE00EE;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(238, 0, 238, 0.4);
+}
+.wiki-link-unresolved {
+  color: #f59e0b !important;
+  border-bottom: 1px dashed #f59e0b;
+  text-decoration: none;
+}
+
+/* Full-Text Search Dropdown */
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #160426;
+  border: 1px solid #420666;
+  border-radius: 6px;
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+}
+.search-result-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #22073d;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.search-result-item:hover {
+  background: #2b0948;
+}
+.search-result-title {
+  color: #00FFFF;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.search-result-snippet {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  line-height: 1.4;
+}

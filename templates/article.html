@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} — Atlas of Tesseract City</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/wiki.js"></script>
+</head>
+<body>
+  <div class="wiki-layout">
+    <aside class="wiki-sidebar">
+      <h3 style="margin-top:0; color:#EE00EE;">Atlas Portal</h3>
+      <p><a href="index.html">← Tesseract City Home</a></p>
+      <input type="text" id="wiki-search" placeholder="Filter knowledge..." style="width: 100%; padding: 7px; box-sizing: border-box; background: #0c0214; color: #fff; border: 1px solid #420666; border-radius: 4px; margin-bottom: 14px;">
+      <nav id="wiki-nav-list">
+        {{NAVIGATION_LINKS}}
+      </nav>
+    </aside>
+    <main class="wiki-content">
+      <nav class="breadcrumbs" style="font-size: 0.85em; color: #94a3b8; margin-bottom: 16px;">
+        <a href="index.html">Home</a> / <span style="color:#00FFFF;">{{TITLE}}</span>
+      </nav>
+      <h1>{{TITLE}}</h1>
+      <div class="article-meta" style="font-size: 0.85em; color: #a855f7; margin-bottom: 24px;">
+        Archived by Titan Atlas • Last Updated: {{DATE}}
+      </div>
+      <section class="article-body">
+        {{CONTENT}}
+      </section>
+    </main>
+  </div>
+</body>
+</html>
