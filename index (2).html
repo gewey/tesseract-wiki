@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Centrally injects CSS, fonts, and theme variables -->
+    <script type="text/javascript" src="../js/dynamichead.js"></script>
+    <style>
+        /* APP SHELL & WIKI LAYOUT */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000000;
+            font-family: Inconsolata, monospace;
+        }
+
+        .viewArea {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .pageHeader {
+            height: 3vh;
+            background-image: url("../img/bg/bricks.png");
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        marquee {
+            color: var(--color-primary, #00EA00);
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        .mainArea {
+            display: flex;
+            height: 94vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        /* LEFT SIDEBAR: WIKI NAVIGATION & SEARCH */
+        .pageLeftMenu {
+            width: 320px;
+            min-width: 300px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            border-right: 2px solid var(--color-primary, #00EA00);
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .wiki-search-box {
+            width: 100%;
+            padding: 8px 12px;
+            background: rgba(10, 10, 15, 0.9);
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            color: var(--color-primary, #00EA00);
+            font-family: Inconsolata, monospace;
+            font-size: 0.85em;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .wiki-search-box:focus {
+            border-color: var(--color-primary, #00EA00);
+            box-shadow: 0 0 8px rgba(0, 234, 0, 0.3);
+        }
+
+        .wiki-cat-title {
+            color: var(--color-accent, #EA00EA);
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 15px 0 8px 0;
+            border-bottom: 1px dashed #30363d;
+            padding-bottom: 4px;
+        }
+
+        .wiki-nav-item {
+            display: block;
+            background: rgba(15, 15, 20, 0.6);
+            border: 1px solid #222;
+            color: #AAA;
+            padding: 7px 10px;
+            font-size: 0.82em;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .wiki-nav-item:hover,
+        .wiki-nav-item.active {
+            background: rgba(0, 234, 0, 0.12);
+            border-color: var(--color-primary, #00EA00);
+            color: #FFF;
+        }
+
+        /* RIGHT CONTENT: WIKI ARTICLE DISPLAY */
+        .pageContent {
+            flex: 1;
+            height: 100%;
+            overflow-y: auto;
+            background: rgba(5, 5, 8, 0.95);
+            padding: 30px 40px;
+            box-sizing: border-box;
+        }
+
+        .wiki-article {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .wiki-article.active {
+            display: block;
+        }
+
+        .wiki-badge-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .wiki-badge {
+            font-size: 0.72em;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .wiki-badge.green {
+            background: rgba(0, 234, 0, 0.15);
+            border: 1px solid var(--color-primary, #00EA00);
+            color: var(--color-primary, #00EA00);
+        }
+
+        .wiki-badge.pink {
+            background: rgba(234, 0, 234, 0.15);
+            border: 1px solid var(--color-accent, #EA00EA);
+            color: var(--color-accent, #EA00EA);
+        }
+
+        .wiki-h1 {
+            color: #FFF;
+            font-size: 2em;
+            margin: 0 0 10px 0;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        .wiki-meta {
+            color: #777;
+            font-size: 0.8em;
+            margin-bottom: 25px;
+        }
+
+        .wiki-body {
+            color: #DDD;
+            font-size: 0.92em;
+            line-height: 1.6;
+        }
+
+        .wiki-body h2 {
+            color: var(--color-primary, #00EA00);
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-left: 3px solid var(--color-primary, #00EA00);
+            padding-left: 10px;
+        }
+
+        /* CYBERPUNK CALLOUT BOXES */
+        .callout {
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.88em;
+            line-height: 1.5;
+        }
+
+        .callout.note {
+            background: rgba(0, 234, 0, 0.08);
+            border-left: 4px solid var(--color-primary, #00EA00);
+            color: #E2FFE2;
+        }
+
+        .callout.warning {
+            background: rgba(234, 0, 234, 0.08);
+            border-left: 4px solid var(--color-accent, #EA00EA);
+            color: #FFE2FF;
+        }
+
+        /* CODE BLOCK STYLING */
+        pre code {
+            display: block;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            padding: 15px;
+            color: var(--color-primary, #00EA00);
+            font-size: 0.85em;
+            overflow-x: auto;
+        }
+
+        .pageFooter {
+            height: 3vh;
+            background-image: url("../img/bg/bricks.png");
+            text-align: center;
+            font-size: 0.75em;
+            line-height: 3vh;
+            color: #AAA;
+            border-top: 1px solid #30363d;
+        }
+
+        .pageFooter a {
+            color: var(--color-primary, #00EA00);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="viewArea">
+        <div class="pageHeader">
+            <marquee>📚 GEWEY SYSTEM WIKI — ARCHITECTURE, MODULES, LORE & SPECS</marquee>
+        </div>
+
+        <div class="mainArea">
+            <!-- LEFT MENU: WIKI SEARCH & INDEX -->
+            <div class="pageLeftMenu">
+                <input type="text" id="wikiSearch" class="wiki-search-box" placeholder="🔍 Search wiki topics..."
+                    onkeyup="filterWikiNav()" />
+
+                <div class="wiki-cat-title">System Core</div>
+                <a class="wiki-nav-item active" onclick="loadWiki('article-pwa')">Service Worker PWA Engine</a>
+                <a class="wiki-nav-item" onclick="loadWiki('article-themes')">Dynamic Theme Subsystem</a>
+                <a class="wiki-nav-item" onclick="loadWiki('article-dynamichead')">dynamichead.js Ingestion</a>
+
+                <div class="wiki-cat-title">AI & Intelligence</div>
+                <a class="wiki-nav-item" onclick="loadWiki('article-viktor')">Viktor AI Agent Specs</a>
+
+                <div class="wiki-cat-title">Archives & Lore</div>
+                <a class="wiki-nav-item" onclick="loadWiki('article-history')">18-Year Lifespan Lore</a>
+            </div>
+
+            <!-- RIGHT CONTENT: ARTICLE VIEWER -->
+            <div class="pageContent">
+                <!-- ARTICLE 1: PWA ENGINE -->
+                <div id="article-pwa" class="wiki-article active">
+                    <div class="wiki-badge-bar">
+                        <span class="wiki-badge green">[SYSTEM_WIKI]</span>
+                        <span class="wiki-badge pink">STATUS: VERIFIED</span>
+                        <span class="wiki-badge green">v2.4.0</span>
+                    </div>
+                    <h1 class="wiki-h1">Service Worker PWA Engine</h1>
+                    <div class="wiki-meta">Last modified: Oct 20, 2026 • Author: Gewey • Section: Core Engine</div>
+                    <div class="wiki-body">
+                        <p>The <strong>gewey.github.io</strong> platform runs as a zero-build Single Page Application
+                            (SPA) backed by a custom Service Worker (<code>sw.js</code>). This guarantees full offline
+                            caching and instant load times without relying on heavy npm build pipelines.</p>
+
+                        <div class="callout note">
+                            <strong>[!NOTE] Cache Strategy:</strong> The Service Worker uses a
+                            <em>Stale-While-Revalidate</em> pattern for assets in <code>/js/</code> and
+                            <code>/css/</code>, while strictly adhering to <em>Network-First</em> for live JSON API
+                            endpoints.
+                        </div>
+
+                        <h2>Cache Registration snippet</h2>
+                        <pre><code>if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('[PWA Engine] Registered:', reg.scope))
+        .catch(err => console.error('[PWA Engine] Failed:', err));
+}</code></pre>
+
+                        <h2>Subsystem Dependencies</h2>
+                        <ul>
+                            <li><code>dynamichead.js</code> — Handles global head tags & CSS injection.</li>
+                            <li><code>bookmarkBuilder.js</code> — Dynamically renders tile categories.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ARTICLE 2: VIKTOR AI -->
+                <div id="article-viktor" class="wiki-article">
+                    <div class="wiki-badge-bar">
+                        <span class="wiki-badge pink">[AI_SUBSYSTEM]</span>
+                        <span class="wiki-badge green">STATUS: ACTIVE</span>
+                    </div>
+                    <h1 class="wiki-h1">Viktor AI Agent Specs</h1>
+                    <div class="wiki-meta">Last modified: Oct 20, 2026 • Author: Gewey • Section: Intelligence</div>
+                    <div class="wiki-body">
+                        <p><strong>Viktor AI</strong> is the embedded conversational intelligence engine powering query
+                            handling, automated site diagnostics, and contextual bookmark retrieval inside the portal
+                            app shell.</p>
+
+                        <div class="callout warning">
+                            <strong>[!SECURITY] Rate Limits:</strong> Client-side API queries are throttled to 60
+                            requests per minute per origin to protect local state memory.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageFooter">
+            <span>Copyright © 2008–2026 Hobos Inc. | <a href="../index.html">Return to Homepage</a></span>
+        </div>
+    </div>
+
+    <script>
+        function loadWiki(articleId) {
+            document.querySelectorAll('.wiki-article').forEach(art => art.classList.remove('active'));
+            document.querySelectorAll('.wiki-nav-item').forEach(btn => btn.classList.remove('active'));
+
+            const target = document.getElementById(articleId);
+            if (target) {
+                target.classList.add('active');
+            }
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+        }
+
+        function filterWikiNav() {
+            const query = document.getElementById('wikiSearch').value.toLowerCase();
+            document.querySelectorAll('.wiki-nav-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
